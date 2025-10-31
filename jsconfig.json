@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "checkJs": true,
+        "target": "es2015",
         "lib": ["esnext", "dom"]
     }
 }
