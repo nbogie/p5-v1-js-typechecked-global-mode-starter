@@ -52,7 +52,7 @@ You don't need to edit, read, or understand these at all, to get started:
 
 ## About the template used
 
-This project was created from the template found at TODO
+This project was created from the template found at https://github.com/nbogie/p5-v1-js-typechecked-global-mode-starter
 
 The template provides a p5.js javascript starter project intended for editing in vscode.
 In that environment you'll get
@@ -75,5 +75,5 @@ The global.d.ts used here to get p5.js v1.x types came from [Gareth Williams' p5
 
 ### known issues with this template
 
-TypeScript isn't perfectly configured - it (and intellisense) will currently think ALL declared functions and variables from ANY .js file in this project are accessible from anywhere else. E.g. they'll not complain if in `sketch.js` you write a call to a function from `more-examples/starsSketch.js`, even though at runtime the latter won't be loaded by the webpage that loads `sketch.js` (namely, `index.html`).
+TypeScript isn't perfectly configured - it (and therefore intellisense) will currently think ALL declared functions and variables from ANY .js file in this project are accessible from anywhere else. E.g. they'll not complain if in `sketch.js` you write a call to a function from `more-examples/starsSketch.js`, even though at runtime the latter won't be loaded by the webpage that loads `sketch.js` (namely, `index.html`).
 (This will only be a problem if you have multiple sketches that don't all load the same .js files. The answer is separate jsconfig files per sketch directory, I think)
