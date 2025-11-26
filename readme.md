@@ -65,3 +65,8 @@ It will also type-check your own code, and you can help it do so by writing jsdo
 ### template credits
 
 The global.d.ts used here to get p5.js v1.x types came from [Gareth Williams' p5 typescript starter project](https://github.com/Gaweph/p5-typescript-starter)
+
+### known issues with this template
+
+TypeScript isn't perfectly configured - it (and intellisense) will currently think ALL declared functions and variables from ANY .js file in this project are accessible from anywhere else. E.g. they'll not complain if in `sketch.js` you write a call to a function from `more-examples/starsSketch.js`, even though at runtime the latter won't be loaded by the webpage that loads `sketch.js` (namely, `index.html`).
+(This will only be a problem if you have multiple sketches that don't all load the same .js files. The answer is separate jsconfig files per sketch directory, I think)
