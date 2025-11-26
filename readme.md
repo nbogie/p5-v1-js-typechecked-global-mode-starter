@@ -1,18 +1,22 @@
 ## Your p5.js JavaScript project with type-checking
 
+You can delete what's currently written here and instead use this file to describe your project however you want, with notes, credits, ideas, helpful instructions for those who want to remix your work or collaborate on it, or for your future self.
+
+At the moment it contains some useful information about the basics that have been put in place to get you started.
+
 ### What are all the files?
 
 You can ignore most of the files. Here's a breakdown of what's what:
 
-#### Files you should edit
+#### Files you SHOULD edit
 
 Make the following files your own!
 
 -   `index.html` - links to your sketch file and the p5.js library
 -   `src/sketch.js` - the main file for your p5 sketch
--   other javascript files in `src/`
+-   add other javascript files in `src/` (optional)
     -   of course you can create more javascript files under the src/ directory, and link to them in `index.html`
--   `readme.md` (optional) - this file! You can delete what's currently written here and instead use this file to describe your project however you want in here, with notes, credits, ideas, helpful instructions for those who want to remix your work or collaborate on it, or for your future self.
+-   `readme.md` (optional) - this file!
 
 #### Files you _don't_ need to edit:
 
@@ -26,13 +30,13 @@ You don't need to edit, read, or understand these at all!
     -   tells vscode and typescript where to find the types describing the functions and global variables provided by typescript (v1.x).
     -   you _definitely_ don't need to understand this file!
 -   `more-examples/`
-    -   you can delete this folder if you like. It contains some longer p5.js examples that are...:
-        -   intended to help check that the type-checking is correctly set up.
-        -   show you how to do some useful things with jsdoc comments.
+    -   you can delete this folder if you like. It contains some longer p5.js examples that are intended:
+        -   to help check that the type-checking is correctly set up.
+        -   to show you how to do some useful things with jsdoc comments.
 
 ## About the template used
 
-This uses the template found at TODO
+This project was created from the template found at TODO
 
 The template provides a p5.js javascript starter project intended for editing in vscode.
 In that environment you'll get
