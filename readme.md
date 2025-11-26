@@ -77,3 +77,9 @@ The global.d.ts used here to get p5.js v1.x types came from [Gareth Williams' p5
 
 TypeScript isn't perfectly configured - it (and therefore intellisense) will currently think ALL declared functions and variables from ANY .js file in this project are accessible from anywhere else. E.g. they'll not complain if in `sketch.js` you write a call to a function from `more-examples/starsSketch.js`, even though at runtime the latter won't be loaded by the webpage that loads `sketch.js` (namely, `index.html`).
 (This will only be a problem if you have multiple sketches that don't all load the same .js files. The answer is separate jsconfig files per sketch directory, I think)
+
+
+## Other p5 project starters
+Are you looking or project starter for p5 v1 ? v2? TS? JS with type-checking? Global mode ? Instance Mode?
+
+Check out https://github.com/nbogie/p5-beyond-the-web-editor-neill/blob/main/docs/starter-projects.md
