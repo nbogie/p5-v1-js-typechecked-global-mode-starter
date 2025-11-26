@@ -1,4 +1,5 @@
-/**
+/** An object representing a star in our sketch.
+ * Such an object will store its own position and velocity as well as its size and colour.
  * @typedef {Object} Star
  * @property {p5.Vector} pos
  * @property {p5.Vector} vel
@@ -32,10 +33,19 @@ function updateStars() {
     stars.forEach(updateStar);
 }
 
-function updateStar(s) {
-    s.pos.add(s.vel);
-    if (s.pos.dist(getCentrePos()) > width / 2) {
-        s.pos = randomScreenPos();
+//Exercise for the reader: try to write some nonsense about the star variable this function code:
+//   specifically, try treating it like a string, with star.toUpperCase()
+//                 and try to access properties that don't exist, by misspelling the property star.pos
+//  Then observe the error messages.
+//  Remove the JSDoc comment - what changes with regard to the error messages?
+/**
+ *
+ * @param {Star} star - the star to update
+ */
+function updateStar(star) {
+    star.pos.add(star.vel);
+    if (star.pos.dist(getCentrePos()) > width / 2) {
+        star.pos = randomScreenPos();
     }
 }
 
