@@ -20,20 +20,28 @@ Make the following files your own!
 
 #### Files you _don't_ need to edit:
 
-You don't need to edit, read, or understand these at all!
+You don't need to edit, read, or understand these at all, to get started:
 
 -   `jsconfig.json`
+
     -   this tells vscode to type-check your files
     -   and lets it know that your JS will be run in the browser, specifically, giving it access to the DOM types (like HTMLElement ), global variables like `document` and `console` and the types of the built-in functions from a modern javascript specification.
     -   if you want to turn off type-checking _entirely_ you can change the `checkJs` setting here.
--   `global.d.ts`
-    -   tells vscode and typescript where to find the types describing the functions and global variables provided by typescript (v1.x).
-    -   you _definitely_ don't need to understand this file!
+
 -   `more-examples/`
+
     -   you can delete this folder if you like. It contains some longer p5.js examples that are intended:
         -   to help check that the type-checking is correctly set up.
         -   to show you how to do some useful things with jsdoc comments.
         -   to give you some optional challenges to experiment with type-checked p5.
+
+-   `global.d.ts`
+
+    -   you _definitely_ don't need to understand this file to get started!
+    -   It tells vscode and typescript where to find the types describing the functions and global variables provided by typescript (v1.x).
+    -   It affects any source files found in the same directory or subdirectories
+    -   It causes vscode to auto-aquire the type definitions from @types/p5 on DefinitelyTyped repo. These haven't been updated since v1.7 so there may be some discrepancies.
+    -   If you add other external libraries to your project (in script tags), you can import their type declarations in here, or add another .d.ts file. This is an advanced topic.
 
 ## About the template used
 
