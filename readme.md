@@ -33,6 +33,7 @@ You don't need to edit, read, or understand these at all!
     -   you can delete this folder if you like. It contains some longer p5.js examples that are intended:
         -   to help check that the type-checking is correctly set up.
         -   to show you how to do some useful things with jsdoc comments.
+        -   to give you some optional challenges to experiment with type-checked p5.
 
 ## About the template used
 
