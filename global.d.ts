@@ -1,3 +1,6 @@
+//Limitations: vscode will auto-aquire these type definitions from @types/p5 (DefinitelyTyped repo) which are not all up to date.
+//For better types consider moving to p5 v2
+
 //All that's needed for p5 global-mode...
 //IF we're not referring to the p5 types in JSDoc comments
 import * as p5Global from "p5/global";
