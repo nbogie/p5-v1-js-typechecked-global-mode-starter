@@ -4,6 +4,13 @@ You can delete what's currently written here and instead use this file to descri
 
 At the moment it contains some useful information about the basics that have been put in place to get you started.
 
+
+## How to run this project
+
+Open index.html in a browser.  For simple sketches that's all that's needed!
+
+For sketches that need to load images or other assets from your project, you'll need to run a local server and load index.html via that server, instead.  One simple server that works well is the VSCode [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) but any webserver will work.
+
 ### What are all the files?
 
 You can ignore most of the files. Here's a breakdown of what's what:
